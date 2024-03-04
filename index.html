@@ -35,6 +35,13 @@
             line-height: 1.6;
             margin-bottom: 20px;
         }
+        .bullet-points {
+            margin-bottom: 20px;
+        }
+        .bullet-points ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
         .links {
             display: flex;
             justify-content: space-between;
@@ -57,16 +64,31 @@
 <body>
     <div class="header">
         <h1>The Stage Manager's Book</h1>
-        <img src="images/logo.jpg" alt="Logo" class="logo">
+        <img src="images/logo.png" alt="Logo" class="logo">
     </div>
     <div class="content">
         <p class="paragraph">
-            Insert your paragraph content here.
+            The Stage Manager's Book is an app dedicated to enhancing the efficiency of stage management by providing a fully digital platform for productions while also contributing to environmental sustainability.
+            By the end of this project, we will have implemented a number of different features.
+        </p>
+        <div class="bullet-points">
+            <ul>
+                <li>Profiles: Each user can create a public profile to share their headshot, bio, and resume with others.</li>
+                <li>Script: Each production's director can upload a script, which they (and authorized users) can annotate. All other members of the production can view these annotations in real-time.</li>
+                <li>Calendar: The stage manager can upload and modify the production calendar. Everytime a change is made to the calendar, all relevant users are notified.</li>
+                <li>Designer: Members of the crew an upload and share design files in this tab.</li>
+                <li>Memories: All members of the cast and crew can share behind-the-scenes photos and videos here.</li>
+                <li>Discussion: This will function as a public discussion forum; all members of the crew can make and reply to posts here.</li>
+                <li>Chat: Members of a production can send each other private direct messages.</li>
+            </ul>
+        </div>
+        <p class="paragraph">
+            All tabs of this app will be organized by hub. Each production has a hub. Members of the cast and crew who are in multiple productions simultaneously will view seperate discussion, designer, etc. pages for each production.
         </p>
         <div class="links">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="bios.html">Team Bios</a>
+            <a href="https://github.com/Bmfioresi/stage-managers-book">View Our Progress</a>
+            <a href="/presentations/StageManagersBook-Sprint1Slides.pdf" download>Sprint 1 Presentation</a>
         </div>
     </div>
 </body>
