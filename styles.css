@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.title-bar {
+    background-color: #586994;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100px; /*Must be same as in .sidebar.height and .sidebar.top*/
+}
+
+.sidebar {
+    background-color: #B4C4AE;
+    position: fixed;
+    top: 120px; /* Adjust based on title-bar height */
+    left: 0;
+    width: 200px;
+    height: calc(100% - 120px); /* Adjust based on title-bar height */
+    padding: 10px 0;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 0;
+    padding: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px 20px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #ddd;
+}
+
+.content {
+    margin-left: 220px; /* Adjust based on sidebar width */
+    padding: 120px 20px 50px 20px; /* Adjust top padding based on title-bar height */
+}
+
+.footer {
+    background-color: #586994;
+    color: white;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-text {
+    display: flex;
+    align-items: center;
+}
+
+.footer-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about-text {
+    max-width: 60%;
+}
+
+.about-photo img {
+    height: 450px;
+    object-fit: cover;
+    aspect-ratio: auto;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+@media (max-width: 600px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    .content {
+        margin-left: 0;
+        padding: 100px 20px 20px 20px; /* Adjust top padding based on title-bar height */
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-text {
+        max-width: 100%;
+        text-align: center;
+    }
+    .about-photo img {
+        height: 450px;
+        width: auto;
+    }
+}
