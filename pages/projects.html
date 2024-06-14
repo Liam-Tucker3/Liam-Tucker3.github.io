@@ -5,6 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website</title>
     <link rel="stylesheet" href="../styles.css">
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery-item {
+            flex: 1 1 calc(33.333% - 20px);
+            display: flex;
+            background-color: #f0f0f0;
+            margin: 10px 0;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .gallery-item img {
+            width: auto;
+            height: 100px;
+            object-fit: cover;
+            margin-left: auto;
+        }
+        .gallery-item-text {
+            max-width: 70%;
+        }
+        .gallery-item-title {
+            font-weight: bold;
+        }
+        .gallery-item-link {
+            margin-top: auto;
+        }
+    </style>
 </head>
 <body>
     <div class="title-bar">
@@ -12,15 +42,48 @@
     </div>
     <div class="sidebar">
         <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="about-me.html">About Me</a></li>
+            <li><a href="../index.html">About Me</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="../files/Liam_Tucker_resume.pdf" download>Resume</a></li>
         </ul>
     </div>
     <div class="content">
         <h2>Projects</h2>
-        <p>TODO: Fill Content</p>
+        <div class="gallery">
+            <div class="gallery-item">
+                <div class="gallery-item-text">
+                    <div class="gallery-item-title">The Stage Manager's Book</div>
+                    <div class="gallery-item-description">During Spring 2024, I collaborated with four other students at The University of Alabama to develop an application for theater management. After creating their profile, a user can create a hub for their production and invite others to join. Within this hub, the stage manager can upload and annotate a script, post announcements, and share production files. We built this application using Node.js, React, and MongoDB.</div>
+                    <a href="https://github.com/Liam-Tucker3/stage-managers-book" class="gallery-item-link">View The Stage Manager's Book repository</a>
+                </div>
+                <img src="../files/smb-logo.png" alt="The Stage Manager's Book Logo">
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-text">
+                    <div class="gallery-item-title">Pronoun Lists in Profile Bios</div>
+                    <div class="gallery-item-description">Durig Summer 2022, I conducted research into characteristics of Twitter users with a pronoun list (e.g. she/her, they/shem) in their profile bio. I wrote Python scripts to access data from SQL databases and the Twitter API and visualized results in R. I am the lead author on a paper published from this research in the Journal of Quantitative Description.</div>
+                    <a href="https://github.com/Liam-Tucker3/pronoun_lists_in_profile_bios" class="gallery-item-link">View code and data necessary for reproduction of results</a>
+                    <a href="https://doi.org/10.51685/jqd.2023.003" class="gallery-item-link"> View published paper</a>
+                </div>
+                <img src="../files/twitter.png" alt="Twitter Logo">
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-text">
+                    <div class="gallery-item-title">Project Title 3</div>
+                    <div class="gallery-item-description">Description of project 3 goes here. This should be brief and informative.</div>
+                    <a href="#" class="gallery-item-link">Learn more</a>
+                </div>
+                <img src="path/to/image3.jpg" alt="Project 3 Image">
+            </div>
+            <!-- Repeat for more items -->
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer-text">
+            © 2024
+            <a href="https://www.linkedin.com/in/liam-tucker-0203/"><img src="../files/linkedin.png" alt="Icon" class="footer-icon"></a>
+            <a href="https://github.com/Liam-Tucker3"><img src="../files/github.png" alt="Icon" class="footer-icon"></a>
+        </span>
     </div>
 </body>
 </html>

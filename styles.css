@@ -84,7 +84,7 @@ body {
 }
 
 .about-text {
-    max-width: 60%;
+    max-width: 75%;
 }
 
 .about-photo img {
@@ -100,7 +100,7 @@ table {
   }
   
   td, th {
-    border: 1px solid #dddddd;
+    border: 1px solid #586994;
     text-align: left;
     padding: 8px;
   }
